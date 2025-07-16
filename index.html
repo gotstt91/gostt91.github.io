@@ -731,7 +731,7 @@
     const finalCondition = condition || googleWeatherCodes[weatherCode]?.condition || 'CLOUDY';
     
     // Repository base URL for v4 icons (now primary for everyone)
-    const repoBaseUrl = 'https://raw.githubusercontent.com/MrChallah/MrChallah.github.io/main/v4/';
+    const repoBaseUrl = 'https://maps.gstatic.com/weather/v1/';
     const fallbackUrl = 'https://maps.gstatic.com/weather/v1/';
     
     // Standard Google Maps weather icon mapping for fallback
@@ -926,7 +926,7 @@
   // Function to get country flag icon URLs
   function getCountryFlagIcon(countryName, countryCode) {
     // Repository base URL for 4x3 flag icons
-    const repoBaseUrl = 'https://raw.githubusercontent.com/MrChallah/MrChallah.github.io/main/4x3/';
+    const repoBaseUrl = '';
     
     // Try country code first (more reliable)
     let flagFile = null;
@@ -1271,7 +1271,7 @@
             console.log('Attempting to show wind waves...');
             
             // Load windy.svg icon
-            const repoBaseUrl = 'https://raw.githubusercontent.com/MrChallah/MrChallah.github.io/main/v4/';
+            const repoBaseUrl = 'https://maps.gstatic.com/weather/v1/';
             const fallbackUrl = 'https://maps.gstatic.com/weather/v1/';
             
             // Clear any existing error handlers
